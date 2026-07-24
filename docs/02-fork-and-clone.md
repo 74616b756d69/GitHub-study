@@ -33,7 +33,12 @@ Fork とは、他の人のリポジトリを **自分のアカウントにコピ
 2. ページ右上の **「Fork」** ボタンをクリック
 3. 「Create fork」をクリック
 
-<!-- GIF: Fork ボタンをクリックする操作 -->
+<p align="center">
+  <img src="../images/github-fork-clone.svg" alt="GitHub のリポジトリ画面（Fork ボタンと Code ボタンの位置）" width="720">
+</p>
+
+> 上の図の **①Fork**（右上）でリポジトリを自分のアカウントにコピー、
+> **②Code → ③Clone URL** をコピーして、次の手順の `git clone` に使います。
 
 ### 確認
 
@@ -53,9 +58,7 @@ Clone とは、GitHub 上のリポジトリを **自分の PC にダウンロー
 
 1. **自分のフォーク**のページを開く（`https://github.com/あなたのユーザー名/GitHub-Studie`）
 2. 緑色の **「Code」** ボタンをクリック
-3. **HTTPS** タブの URL をコピー
-
-<!-- GIF: Code ボタンから URL をコピーする操作 -->
+3. **HTTPS** タブの URL をコピー（上の図の ③ の部分です）
 
 4. ターミナルを開いて、作業したいフォルダに移動:
 

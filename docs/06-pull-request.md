@@ -41,6 +41,21 @@ push した直後にフォーク先のページを開くと、黄色いバーで
    - head repository: `あなた/GitHub-Studie` / compare: `feature/add-自分の名前`
 6. **「Create pull request」** をクリック
 
+### PR 画面の見方
+
+PR を作成すると、次のような画面になります。左側でやり取りとマージ、右側で「誰が・何を」を整理します。
+
+<p align="center">
+  <img src="../images/github-pr-page.svg" alt="Pull Request 画面の見方（左側の会話・マージ、右側のサイドバー）" width="720">
+</p>
+
+| 場所 | 何を見る？ |
+|------|-----------|
+| **左・上部** | タイトルと Open/Merged の状態、変更のコミット数 |
+| **左・中央** | 会話（コメント）、レビュー結果、コンフリクトの有無 |
+| **左・Merge ボタン** | 承認されたら、ここで main に統合 |
+| **右・サイドバー** | Reviewers（レビュー依頼）/ Assignees（担当）/ Labels など補助項目 |
+
 ---
 
 ## 2. PR の書き方（重要！）
