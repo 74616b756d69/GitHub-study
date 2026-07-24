@@ -1,0 +1,77 @@
+<svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', 'Hiragino Sans', sans-serif">
+  <defs>
+    <filter id="shadow4" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrRight" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0969da"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="350" rx="16" fill="#f6f8fa"/>
+  <text x="400" y="40" text-anchor="middle" font-size="22" font-weight="bold" fill="#24292e">Git の基本操作フロー</text>
+
+  <!-- Working Directory -->
+  <rect x="30" y="100" width="150" height="140" rx="14" fill="#fff3cd" stroke="#f0ad4e" stroke-width="2" filter="url(#shadow4)"/>
+  <text x="105" y="135" text-anchor="middle" font-size="14" font-weight="bold" fill="#664d03">作業ディレクトリ</text>
+  <text x="105" y="158" text-anchor="middle" font-size="11" fill="#664d03">Working Directory</text>
+  <rect x="50" y="172" width="110" height="24" rx="6" fill="#fff"/>
+  <text x="105" y="189" text-anchor="middle" font-size="10" fill="#664d03">ファイルを編集</text>
+  <rect x="50" y="202" width="110" height="24" rx="6" fill="#fff"/>
+  <text x="105" y="219" text-anchor="middle" font-size="10" fill="#664d03">コードを書く</text>
+
+  <!-- Arrow 1 -->
+  <line x1="180" y1="170" x2="230" y2="170" stroke="#0969da" stroke-width="3" marker-end="url(#arrRight)"/>
+  <rect x="178" y="130" width="60" height="28" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1"/>
+  <text x="208" y="149" text-anchor="middle" font-size="12" font-weight="bold" fill="#0969da">git add</text>
+
+  <!-- Staging Area -->
+  <rect x="240" y="100" width="150" height="140" rx="14" fill="#cff4fc" stroke="#0dcaf0" stroke-width="2" filter="url(#shadow4)"/>
+  <text x="315" y="135" text-anchor="middle" font-size="14" font-weight="bold" fill="#055160">ステージング</text>
+  <text x="315" y="158" text-anchor="middle" font-size="11" fill="#055160">Staging Area</text>
+  <rect x="260" y="172" width="110" height="24" rx="6" fill="#fff"/>
+  <text x="315" y="189" text-anchor="middle" font-size="10" fill="#055160">コミットする</text>
+  <rect x="260" y="202" width="110" height="24" rx="6" fill="#fff"/>
+  <text x="315" y="219" text-anchor="middle" font-size="10" fill="#055160">変更を選択</text>
+
+  <!-- Arrow 2 -->
+  <line x1="390" y1="170" x2="440" y2="170" stroke="#0969da" stroke-width="3" marker-end="url(#arrRight)"/>
+  <rect x="378" y="130" width="80" height="28" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1"/>
+  <text x="418" y="149" text-anchor="middle" font-size="12" font-weight="bold" fill="#0969da">git commit</text>
+
+  <!-- Local Repository -->
+  <rect x="450" y="100" width="150" height="140" rx="14" fill="#d1e7dd" stroke="#198754" stroke-width="2" filter="url(#shadow4)"/>
+  <text x="525" y="135" text-anchor="middle" font-size="14" font-weight="bold" fill="#0f5132">ローカルリポ</text>
+  <text x="525" y="158" text-anchor="middle" font-size="11" fill="#0f5132">Local Repository</text>
+  <rect x="470" y="172" width="110" height="24" rx="6" fill="#fff"/>
+  <text x="525" y="189" text-anchor="middle" font-size="10" fill="#0f5132">履歴として</text>
+  <rect x="470" y="202" width="110" height="24" rx="6" fill="#fff"/>
+  <text x="525" y="219" text-anchor="middle" font-size="10" fill="#0f5132">記録される</text>
+
+  <!-- Arrow 3 -->
+  <line x1="600" y1="170" x2="650" y2="170" stroke="#0969da" stroke-width="3" marker-end="url(#arrRight)"/>
+  <rect x="590" y="130" width="76" height="28" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1"/>
+  <text x="628" y="149" text-anchor="middle" font-size="12" font-weight="bold" fill="#0969da">git push</text>
+
+  <!-- Remote Repository -->
+  <rect x="660" y="100" width="120" height="140" rx="14" fill="#f3e8ff" stroke="#8250df" stroke-width="2" filter="url(#shadow4)"/>
+  <text x="720" y="135" text-anchor="middle" font-size="14" font-weight="bold" fill="#6e40c9">リモート</text>
+  <text x="720" y="158" text-anchor="middle" font-size="11" fill="#6e40c9">GitHub上</text>
+  <rect x="675" y="172" width="90" height="24" rx="6" fill="#fff"/>
+  <text x="720" y="189" text-anchor="middle" font-size="10" fill="#6e40c9">チームで</text>
+  <rect x="675" y="202" width="90" height="24" rx="6" fill="#fff"/>
+  <text x="720" y="219" text-anchor="middle" font-size="10" fill="#6e40c9">共有！</text>
+
+  <!-- Bottom summary -->
+  <rect x="100" y="280" width="600" height="50" rx="12" fill="#fff" stroke="#d0d7de" stroke-width="1"/>
+  <text x="400" y="308" text-anchor="middle" font-size="13" fill="#24292e">
+    <tspan font-weight="bold" fill="#f0ad4e">編集</tspan>
+    <tspan fill="#6e7781"> → </tspan>
+    <tspan font-weight="bold" fill="#0dcaf0">git add</tspan>
+    <tspan fill="#6e7781"> → </tspan>
+    <tspan font-weight="bold" fill="#198754">git commit</tspan>
+    <tspan fill="#6e7781"> → </tspan>
+    <tspan font-weight="bold" fill="#8250df">git push</tspan>
+    <tspan fill="#6e7781"> が基本の流れ！</tspan>
+  </text>
+</svg>

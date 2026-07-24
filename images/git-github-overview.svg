@@ -1,0 +1,92 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', 'Hiragino Sans', sans-serif">
+  <defs>
+    <linearGradient id="gitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F05033;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DE3E26;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ghGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2b3137;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#24292e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" rx="16" fill="#f6f8fa"/>
+
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" font-size="22" font-weight="bold" fill="#24292e">Git と GitHub の関係</text>
+
+  <!-- Local PC Area -->
+  <rect x="40" y="70" width="320" height="290" rx="16" fill="#fff" stroke="#d0d7de" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="40" y="70" width="320" height="40" rx="16" fill="#ddf4ff"/>
+  <rect x="40" y="94" width="320" height="16" fill="#ddf4ff"/>
+  <text x="200" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#0969da">あなたのパソコン（ローカル）</text>
+
+  <!-- Git Box -->
+  <rect x="80" y="130" width="240" height="80" rx="12" fill="url(#gitGrad)" filter="url(#shadow)"/>
+  <text x="200" y="165" text-anchor="middle" font-size="20" font-weight="bold" fill="#fff">Git</text>
+  <text x="200" y="192" text-anchor="middle" font-size="12" fill="#ffcfc9">バージョン管理ツール</text>
+
+  <!-- Working Directory -->
+  <rect x="80" y="230" width="110" height="60" rx="8" fill="#fff3cd" stroke="#f0ad4e" stroke-width="1.5"/>
+  <text x="135" y="256" text-anchor="middle" font-size="11" font-weight="bold" fill="#664d03">作業フォルダ</text>
+  <text x="135" y="274" text-anchor="middle" font-size="10" fill="#664d03">ファイル編集</text>
+
+  <!-- Local Repo -->
+  <rect x="210" y="230" width="110" height="60" rx="8" fill="#d1e7dd" stroke="#198754" stroke-width="1.5"/>
+  <text x="265" y="256" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f5132">ローカルリポ</text>
+  <text x="265" y="274" text-anchor="middle" font-size="10" fill="#0f5132">履歴を保存</text>
+
+  <!-- Arrow between working dir and local repo -->
+  <line x1="190" y1="260" x2="210" y2="260" stroke="#495057" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="200" y="250" text-anchor="middle" font-size="8" fill="#495057">commit</text>
+
+  <!-- Cloud / GitHub Area -->
+  <rect x="440" y="70" width="320" height="290" rx="16" fill="#fff" stroke="#d0d7de" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="440" y="70" width="320" height="40" rx="16" fill="#f3e8ff"/>
+  <rect x="440" y="94" width="320" height="16" fill="#f3e8ff"/>
+  <text x="600" y="97" text-anchor="middle" font-size="15" font-weight="bold" fill="#8250df">インターネット上（クラウド）</text>
+
+  <!-- GitHub Box -->
+  <rect x="480" y="130" width="240" height="80" rx="12" fill="url(#ghGrad)" filter="url(#shadow)"/>
+  <!-- GitHub Logo simplified -->
+  <circle cx="560" cy="162" r="18" fill="#fff"/>
+  <text x="560" y="169" text-anchor="middle" font-size="22" fill="#24292e">&#x1F431;</text>
+  <text x="630" y="165" text-anchor="middle" font-size="20" font-weight="bold" fill="#fff">GitHub</text>
+  <text x="600" y="192" text-anchor="middle" font-size="12" fill="#8b949e">コード共有プラットフォーム</text>
+
+  <!-- Remote Repo -->
+  <rect x="510" y="230" width="180" height="60" rx="8" fill="#cff4fc" stroke="#0dcaf0" stroke-width="1.5"/>
+  <text x="600" y="253" text-anchor="middle" font-size="11" font-weight="bold" fill="#055160">リモートリポジトリ</text>
+  <text x="600" y="271" text-anchor="middle" font-size="10" fill="#055160">チームで共有</text>
+
+  <!-- Push/Pull Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0969da"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#198754"/>
+    </marker>
+  </defs>
+
+  <!-- Push Arrow -->
+  <line x1="330" y1="240" x2="500" y2="240" stroke="#0969da" stroke-width="3" marker-end="url(#arrowBlue)" stroke-dasharray="8,4"/>
+  <rect x="370" y="222" width="80" height="22" rx="6" fill="#ddf4ff"/>
+  <text x="410" y="238" text-anchor="middle" font-size="13" font-weight="bold" fill="#0969da">push</text>
+
+  <!-- Pull Arrow -->
+  <line x1="500" y1="275" x2="330" y2="275" stroke="#198754" stroke-width="3" marker-end="url(#arrowGreen)" stroke-dasharray="8,4"/>
+  <rect x="370" y="265" width="80" height="22" rx="6" fill="#d1e7dd"/>
+  <text x="410" y="281" text-anchor="middle" font-size="13" font-weight="bold" fill="#198754">pull</text>
+
+  <!-- Bottom labels -->
+  <text x="200" y="380" text-anchor="middle" font-size="11" fill="#57606a">自分だけの作業スペース</text>
+  <text x="600" y="380" text-anchor="middle" font-size="11" fill="#57606a">みんなと共有する場所</text>
+</svg>

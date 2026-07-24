@@ -1,0 +1,115 @@
+<svg viewBox="0 0 800 620" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', 'Hiragino Sans', sans-serif">
+  <defs>
+    <filter id="shV2" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="620" rx="16" fill="#f6f8fa"/>
+  <text x="400" y="36" text-anchor="middle" font-size="20" font-weight="bold" fill="#24292e">VS Code のボタン = ターミナルのコマンド</text>
+  <text x="400" y="58" text-anchor="middle" font-size="13" fill="#57606a">どちらを使っても、やっていることは同じです</text>
+
+  <!-- ===== Column Headers ===== -->
+  <rect x="40" y="75" width="330" height="36" rx="10" fill="#0078d4"/>
+  <text x="205" y="99" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">VS Code（ボタン操作）</text>
+
+  <rect x="430" y="75" width="330" height="36" rx="10" fill="#1e1e1e"/>
+  <text x="595" y="99" text-anchor="middle" font-size="15" font-weight="bold" fill="#4ec9b0">ターミナル（コマンド）</text>
+
+  <!-- ===== Row 1: git add (Stage) ===== -->
+  <!-- Step label -->
+  <rect x="8" y="143" width="26" height="26" rx="13" fill="#cff4fc"/>
+  <text x="21" y="161" text-anchor="middle" font-size="13" font-weight="bold" fill="#055160">1</text>
+
+  <!-- VS Code side -->
+  <rect x="40" y="120" width="330" height="140" rx="12" fill="#fff" stroke="#d0d7de" stroke-width="1.5" filter="url(#shV2)"/>
+  <!-- SOURCE CONTROL header -->
+  <rect x="55" y="132" width="250" height="26" rx="6" fill="#252526"/>
+  <text x="65" y="150" font-size="12" font-weight="bold" fill="#cccccc">SOURCE CONTROL</text>
+  <!-- File entry with + button -->
+  <rect x="55" y="164" width="250" height="28" rx="4" fill="#2d2d2d"/>
+  <text x="70" y="183" font-size="11" fill="#e8e8e8">M  taro-yamada.md</text>
+  <rect x="270" y="168" width="24" height="20" rx="4" fill="#0078d4"/>
+  <text x="282" y="183" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">+</text>
+  <!-- Description below -->
+  <text x="55" y="215" font-size="12" font-weight="bold" fill="#0078d4">変更したファイルの「+」ボタンをクリック</text>
+  <text x="55" y="235" font-size="11" fill="#57606a">→ コミットに含めるファイルを選択する</text>
+
+  <!-- Equals sign -->
+  <rect x="380" y="170" width="40" height="28" rx="14" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="400" y="190" text-anchor="middle" font-size="18" font-weight="bold" fill="#0969da">=</text>
+
+  <!-- Terminal side -->
+  <rect x="430" y="120" width="330" height="140" rx="12" fill="#fff" stroke="#d0d7de" stroke-width="1.5" filter="url(#shV2)"/>
+  <rect x="445" y="135" width="300" height="44" rx="8" fill="#1e1e1e"/>
+  <text x="460" y="162" font-size="11" fill="#4ec9b0">$</text>
+  <text x="475" y="162" font-size="13" font-weight="bold" fill="#dcdcaa">git add</text>
+  <text x="540" y="162" font-size="13" fill="#ce9178">taro-yamada.md</text>
+  <text x="445" y="205" font-size="12" fill="#57606a">変更をステージングする</text>
+  <text x="445" y="225" font-size="11" fill="#57606a">（コミットに含めるファイルを選ぶ）</text>
+
+  <!-- ===== Row 2: git commit ===== -->
+  <!-- Step label -->
+  <rect x="8" y="313" width="26" height="26" rx="13" fill="#fff3cd"/>
+  <text x="21" y="331" text-anchor="middle" font-size="13" font-weight="bold" fill="#664d03">2</text>
+
+  <!-- VS Code side -->
+  <rect x="40" y="280" width="330" height="160" rx="12" fill="#fff" stroke="#d0d7de" stroke-width="1.5" filter="url(#shV2)"/>
+  <!-- Commit message box -->
+  <rect x="55" y="295" width="250" height="28" rx="6" fill="#3c3c3c" stroke="#007acc" stroke-width="1.5"/>
+  <text x="65" y="314" font-size="11" fill="#e8e8e8">add: 自己紹介カード（山田太郎）</text>
+  <!-- Commit button -->
+  <rect x="55" y="330" width="250" height="30" rx="6" fill="#0078d4"/>
+  <text x="180" y="350" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">Commit</text>
+  <!-- Description below -->
+  <text x="55" y="385" font-size="12" font-weight="bold" fill="#0078d4">メッセージを入力 →「Commit」ボタン</text>
+  <text x="55" y="405" font-size="11" fill="#e36209">→ 自分の PC に記録される（まだ GitHub には送られない）</text>
+
+  <!-- Equals sign -->
+  <rect x="380" y="330" width="40" height="28" rx="14" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="400" y="350" text-anchor="middle" font-size="18" font-weight="bold" fill="#0969da">=</text>
+
+  <!-- Terminal side -->
+  <rect x="430" y="280" width="330" height="160" rx="12" fill="#fff" stroke="#d0d7de" stroke-width="1.5" filter="url(#shV2)"/>
+  <rect x="445" y="295" width="300" height="58" rx="8" fill="#1e1e1e"/>
+  <text x="460" y="318" font-size="11" fill="#4ec9b0">$</text>
+  <text x="475" y="318" font-size="13" font-weight="bold" fill="#dcdcaa">git commit</text>
+  <text x="560" y="318" font-size="13" fill="#ce9178">-m</text>
+  <text x="460" y="340" font-size="13" fill="#ce9178">"add: 自己紹介カード（山田太郎）"</text>
+  <text x="445" y="380" font-size="12" fill="#57606a">変更を履歴として自分の PC に保存</text>
+  <text x="445" y="400" font-size="11" fill="#e36209">この時点ではまだ GitHub に送られていない</text>
+
+  <!-- ===== Row 3: git push ===== -->
+  <!-- Step label -->
+  <rect x="8" y="483" width="26" height="26" rx="13" fill="#f3e8ff"/>
+  <text x="21" y="501" text-anchor="middle" font-size="13" font-weight="bold" fill="#8250df">3</text>
+
+  <!-- VS Code side -->
+  <rect x="40" y="460" width="330" height="120" rx="12" fill="#fff" stroke="#d0d7de" stroke-width="1.5" filter="url(#shV2)"/>
+  <!-- Menu option -->
+  <rect x="55" y="475" width="250" height="26" rx="6" fill="#252526"/>
+  <text x="65" y="493" font-size="12" fill="#cccccc">...  →  Push</text>
+  <!-- Status bar push -->
+  <text x="55" y="520" font-size="11" fill="#57606a">または、ステータスバー:</text>
+  <rect x="55" y="528" width="250" height="24" rx="4" fill="#0078d4"/>
+  <text x="180" y="545" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">Sync Changes  (0↓ 1↑)</text>
+  <!-- Description -->
+  <text x="55" y="570" font-size="12" font-weight="bold" fill="#8250df">→ GitHub にアップロードしてチームに共有</text>
+
+  <!-- Equals sign -->
+  <rect x="380" y="500" width="40" height="28" rx="14" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="400" y="520" text-anchor="middle" font-size="18" font-weight="bold" fill="#0969da">=</text>
+
+  <!-- Terminal side -->
+  <rect x="430" y="460" width="330" height="120" rx="12" fill="#fff" stroke="#d0d7de" stroke-width="1.5" filter="url(#shV2)"/>
+  <rect x="445" y="475" width="300" height="44" rx="8" fill="#1e1e1e"/>
+  <text x="460" y="502" font-size="11" fill="#4ec9b0">$</text>
+  <text x="475" y="502" font-size="13" font-weight="bold" fill="#dcdcaa">git push</text>
+  <text x="543" y="502" font-size="13" fill="#ce9178">origin feature/add-taro</text>
+  <text x="445" y="540" font-size="12" fill="#57606a">コミットした履歴を GitHub にアップロード</text>
+  <text x="445" y="558" font-size="11" fill="#8250df">これでチームメンバーに変更が見える！</text>
+
+  <!-- ===== Bottom summary ===== -->
+  <rect x="60" y="592" width="680" height="22" rx="8" fill="#24292e"/>
+  <text x="400" y="608" text-anchor="middle" font-size="12" fill="#ccc">ボタンでもコマンドでも OK！ 慣れてきたらコマンドの方が速くて便利になります</text>
+</svg>
