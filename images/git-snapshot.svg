@@ -1,0 +1,101 @@
+<svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', 'Hiragino Sans', sans-serif">
+  <defs>
+    <filter id="shSn" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrSn" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6e7781"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="480" rx="16" fill="#f6f8fa"/>
+  <text x="400" y="36" text-anchor="middle" font-size="20" font-weight="bold" fill="#24292e">Git は「差分」ではなく「フォルダ全体」を記録する</text>
+  <text x="400" y="58" text-anchor="middle" font-size="13" fill="#57606a">だからいつでも過去の状態に戻せる</text>
+
+  <!-- ===== Timeline ===== -->
+  <line x1="100" y1="110" x2="700" y2="110" stroke="#d0d7de" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Commit 1 -->
+  <circle cx="160" cy="110" r="16" fill="#1a7f37" filter="url(#shSn)"/>
+  <text x="160" y="116" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">C1</text>
+  <text x="160" y="90" text-anchor="middle" font-size="10" fill="#57606a">最初の状態</text>
+
+  <!-- Commit 1 snapshot -->
+  <rect x="100" y="140" width="120" height="130" rx="8" fill="#fff" stroke="#1a7f37" stroke-width="1.5" filter="url(#shSn)"/>
+  <rect x="100" y="140" width="120" height="24" rx="8" fill="#d1e7dd"/>
+  <rect x="100" y="156" width="120" height="8" fill="#d1e7dd"/>
+  <text x="160" y="158" text-anchor="middle" font-size="10" font-weight="bold" fill="#0f5132">スナップショット</text>
+  <rect x="110" y="175" width="100" height="18" rx="4" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <text x="160" y="188" text-anchor="middle" font-size="9" fill="#24292e">index.html v1</text>
+  <rect x="110" y="199" width="100" height="18" rx="4" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <text x="160" y="212" text-anchor="middle" font-size="9" fill="#24292e">style.css v1</text>
+  <rect x="110" y="223" width="100" height="18" rx="4" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <text x="160" y="236" text-anchor="middle" font-size="9" fill="#24292e">app.js v1</text>
+
+  <!-- Commit 2 -->
+  <circle cx="400" cy="110" r="16" fill="#0969da" filter="url(#shSn)"/>
+  <text x="400" y="116" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">C2</text>
+  <text x="400" y="90" text-anchor="middle" font-size="10" fill="#57606a">CSS を修正</text>
+
+  <!-- Commit 2 snapshot -->
+  <rect x="340" y="140" width="120" height="130" rx="8" fill="#fff" stroke="#0969da" stroke-width="1.5" filter="url(#shSn)"/>
+  <rect x="340" y="140" width="120" height="24" rx="8" fill="#ddf4ff"/>
+  <rect x="340" y="156" width="120" height="8" fill="#ddf4ff"/>
+  <text x="400" y="158" text-anchor="middle" font-size="10" font-weight="bold" fill="#0550ae">スナップショット</text>
+  <rect x="350" y="175" width="100" height="18" rx="4" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <text x="400" y="188" text-anchor="middle" font-size="9" fill="#24292e">index.html v1</text>
+  <rect x="350" y="199" width="100" height="18" rx="4" fill="#fff3cd" stroke="#f0ad4e" stroke-width="1.5"/>
+  <text x="400" y="212" text-anchor="middle" font-size="9" font-weight="bold" fill="#664d03">style.css v2</text>
+  <rect x="350" y="223" width="100" height="18" rx="4" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <text x="400" y="236" text-anchor="middle" font-size="9" fill="#24292e">app.js v1</text>
+
+  <!-- Commit 3 -->
+  <circle cx="640" cy="110" r="16" fill="#8250df" filter="url(#shSn)"/>
+  <text x="640" y="116" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">C3</text>
+  <text x="640" y="90" text-anchor="middle" font-size="10" fill="#57606a">JS を追加</text>
+
+  <!-- Commit 3 snapshot -->
+  <rect x="580" y="140" width="120" height="130" rx="8" fill="#fff" stroke="#8250df" stroke-width="1.5" filter="url(#shSn)"/>
+  <rect x="580" y="140" width="120" height="24" rx="8" fill="#f3e8ff"/>
+  <rect x="580" y="156" width="120" height="8" fill="#f3e8ff"/>
+  <text x="640" y="158" text-anchor="middle" font-size="10" font-weight="bold" fill="#6e40c9">スナップショット</text>
+  <rect x="590" y="175" width="100" height="18" rx="4" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <text x="640" y="188" text-anchor="middle" font-size="9" fill="#24292e">index.html v1</text>
+  <rect x="590" y="199" width="100" height="18" rx="4" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+  <text x="640" y="212" text-anchor="middle" font-size="9" fill="#24292e">style.css v2</text>
+  <rect x="590" y="223" width="100" height="18" rx="4" fill="#fff3cd" stroke="#f0ad4e" stroke-width="1.5"/>
+  <text x="640" y="236" text-anchor="middle" font-size="9" font-weight="bold" fill="#664d03">app.js v2</text>
+
+  <!-- Arrows between commits -->
+  <line x1="176" y1="110" x2="382" y2="110" stroke="#6e7781" stroke-width="2" marker-end="url(#arrSn)"/>
+  <line x1="416" y1="110" x2="622" y2="110" stroke="#6e7781" stroke-width="2" marker-end="url(#arrSn)"/>
+
+  <!-- ===== Restore illustration ===== -->
+  <rect x="60" y="295" width="680" height="170" rx="14" fill="#fff" stroke="#d0d7de" stroke-width="1.5" filter="url(#shSn)"/>
+  <text x="400" y="322" text-anchor="middle" font-size="16" font-weight="bold" fill="#24292e">だから「あの時の状態に戻して！」ができる</text>
+
+  <!-- Before (C3 state) -->
+  <rect x="90" y="340" width="180" height="100" rx="10" fill="#ffebe9" stroke="#cf222e" stroke-width="1.5"/>
+  <text x="180" y="362" text-anchor="middle" font-size="12" font-weight="bold" fill="#cf222e">今の状態（C3）</text>
+  <text x="180" y="385" text-anchor="middle" font-size="11" fill="#cf222e">app.js を変更したら</text>
+  <text x="180" y="403" text-anchor="middle" font-size="11" fill="#cf222e">バグが出た...</text>
+  <text x="180" y="428" text-anchor="middle" font-size="10" fill="#57606a">git restore app.js</text>
+
+  <!-- Arrow -->
+  <line x1="280" y1="390" x2="360" y2="390" stroke="#1a7f37" stroke-width="3" marker-end="url(#arrSn)"/>
+  <text x="320" y="380" text-anchor="middle" font-size="11" font-weight="bold" fill="#1a7f37">戻す！</text>
+
+  <!-- After (restored) -->
+  <rect x="370" y="340" width="180" height="100" rx="10" fill="#d1e7dd" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="460" y="362" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a7f37">復元できた！</text>
+  <text x="460" y="385" text-anchor="middle" font-size="11" fill="#0f5132">前のコミットの状態に</text>
+  <text x="460" y="403" text-anchor="middle" font-size="11" fill="#0f5132">戻せた</text>
+  <text x="460" y="428" text-anchor="middle" font-size="10" fill="#57606a">フォルダ全体が記録されているから</text>
+
+  <!-- Key point box -->
+  <rect x="570" y="345" width="155" height="90" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1"/>
+  <text x="648" y="368" text-anchor="middle" font-size="11" font-weight="bold" fill="#0969da">ポイント</text>
+  <text x="648" y="388" text-anchor="middle" font-size="10" fill="#0550ae">Git はコミットごとに</text>
+  <text x="648" y="404" text-anchor="middle" font-size="10" fill="#0550ae">フォルダ全体の状態を</text>
+  <text x="648" y="420" text-anchor="middle" font-size="10" fill="#0550ae">丸ごと記録している</text>
+</svg>

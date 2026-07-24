@@ -3,8 +3,11 @@
     <filter id="shadow5" x="-5%" y="-5%" width="115%" height="115%">
       <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.12"/>
     </filter>
-    <marker id="arrDown" markerWidth="7" markerHeight="10" refX="3.5" refY="9" orient="auto">
-      <polygon points="0 0, 3.5 10, 7 0" fill="#0969da"/>
+    <marker id="arrDown5" markerWidth="8" markerHeight="8" refX="4" refY="8" orient="auto">
+      <polygon points="0 0, 4 8, 8 0" fill="#0969da"/>
+    </marker>
+    <marker id="arrDown5g" markerWidth="8" markerHeight="8" refX="4" refY="8" orient="auto">
+      <polygon points="0 0, 4 8, 8 0" fill="#1a7f37"/>
     </marker>
   </defs>
 
@@ -15,11 +18,11 @@
   <rect x="250" y="65" width="300" height="60" rx="14" fill="#ddf4ff" stroke="#0969da" stroke-width="2" filter="url(#shadow5)"/>
   <circle cx="280" cy="95" r="16" fill="#0969da"/>
   <text x="280" y="101" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">1</text>
-  <text x="410" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#0969da">ブランチで作業＆Push</text>
-  <text x="410" y="112" text-anchor="middle" font-size="11" fill="#0550ae">変更をGitHubにアップロード</text>
+  <text x="410" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#0969da">ブランチで作業 &amp; Push</text>
+  <text x="410" y="112" text-anchor="middle" font-size="11" fill="#0550ae">変更を GitHub にアップロード</text>
 
-  <!-- Arrow -->
-  <line x1="400" y1="125" x2="400" y2="150" stroke="#0969da" stroke-width="2" marker-end="url(#arrDown)"/>
+  <!-- Arrow 1→2 -->
+  <line x1="400" y1="125" x2="400" y2="148" stroke="#0969da" stroke-width="2.5" marker-end="url(#arrDown5)"/>
 
   <!-- Step 2 -->
   <rect x="250" y="155" width="300" height="60" rx="14" fill="#f3e8ff" stroke="#8250df" stroke-width="2" filter="url(#shadow5)"/>
@@ -28,8 +31,8 @@
   <text x="410" y="182" text-anchor="middle" font-size="14" font-weight="bold" fill="#8250df">Pull Request を作成</text>
   <text x="410" y="202" text-anchor="middle" font-size="11" fill="#6e40c9">「この変更をレビューしてください！」</text>
 
-  <!-- Arrow -->
-  <line x1="400" y1="215" x2="400" y2="240" stroke="#0969da" stroke-width="2" marker-end="url(#arrDown)"/>
+  <!-- Arrow 2→3 -->
+  <line x1="400" y1="215" x2="400" y2="238" stroke="#0969da" stroke-width="2.5" marker-end="url(#arrDown5)"/>
 
   <!-- Step 3 -->
   <rect x="250" y="245" width="300" height="60" rx="14" fill="#fff3cd" stroke="#f0ad4e" stroke-width="2" filter="url(#shadow5)"/>
@@ -38,29 +41,29 @@
   <text x="410" y="272" text-anchor="middle" font-size="14" font-weight="bold" fill="#664d03">コードレビュー</text>
   <text x="410" y="292" text-anchor="middle" font-size="11" fill="#664d03">チームメンバーがコードを確認</text>
 
-  <!-- Feedback loop -->
+  <!-- Feedback loop (original style) -->
   <path d="M 550 270 C 620 270, 620 200, 550 200" stroke="#e16f24" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
   <text x="610" y="240" font-size="10" fill="#e16f24">修正依頼</text>
   <text x="610" y="254" font-size="10" fill="#e16f24">→ 再修正</text>
 
-  <!-- Arrow -->
-  <line x1="400" y1="305" x2="400" y2="330" stroke="#0969da" stroke-width="2" marker-end="url(#arrDown)"/>
+  <!-- Arrow 3→4 -->
+  <line x1="400" y1="305" x2="400" y2="328" stroke="#0969da" stroke-width="2.5" marker-end="url(#arrDown5)"/>
 
   <!-- Step 4 -->
   <rect x="250" y="335" width="300" height="60" rx="14" fill="#d1e7dd" stroke="#1a7f37" stroke-width="2" filter="url(#shadow5)"/>
   <circle cx="280" cy="365" r="16" fill="#1a7f37"/>
   <text x="280" y="371" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">4</text>
   <text x="410" y="357" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a7f37">Approve &amp; Merge</text>
-  <text x="410" y="380" text-anchor="middle" font-size="11" fill="#0f5132">承認されたらmainに統合！</text>
+  <text x="410" y="380" text-anchor="middle" font-size="11" fill="#0f5132">承認されたら main に統合！</text>
 
-  <!-- Success -->
+  <!-- Arrow 4→Success -->
+  <line x1="400" y1="395" x2="400" y2="418" stroke="#1a7f37" stroke-width="2.5" marker-end="url(#arrDown5g)"/>
+
+  <!-- Success pill -->
   <rect x="300" y="420" width="200" height="40" rx="20" fill="#1a7f37" filter="url(#shadow5)"/>
   <text x="400" y="445" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">main に反映完了！</text>
 
-  <!-- Arrow to success -->
-  <line x1="400" y1="395" x2="400" y2="418" stroke="#1a7f37" stroke-width="2" marker-end="url(#arrDown)"/>
-
-  <!-- Side annotations -->
+  <!-- Side annotation -->
   <rect x="30" y="155" width="190" height="80" rx="10" fill="#fff" stroke="#d0d7de" stroke-width="1"/>
   <text x="125" y="178" text-anchor="middle" font-size="11" font-weight="bold" fill="#24292e">PR に書くこと</text>
   <text x="45" y="196" font-size="10" fill="#57606a">- 何を変更したか</text>
