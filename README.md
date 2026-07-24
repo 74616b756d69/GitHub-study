@@ -125,6 +125,8 @@ VS Code を使っている場合、ターミナルでコマンドを打たなく
 | 07 | [レビューとマージ](docs/07-review-and-merge.md) | コードレビューの流れ |
 | 08 | [コンフリクトの解消](docs/08-conflict.md) | 衝突が起きたときの対処法 |
 | 09 | [よく使うコマンド集](docs/09-cheatsheet.md) | 困ったときに見返す一覧 |
+| 10 | [認証の設定（PAT / SSH）](docs/10-authentication.md) | push で弾かれるときの対処 |
+| 11 | [困ったときは（トラブル集）](docs/11-troubleshooting.md) | エラー別の対処・リカバリー |
 
 ---
 

@@ -1,6 +1,6 @@
 # 09. よく使うコマンド集
 
-[< 前へ: コンフリクトの解消](08-conflict.md) | [目次](../README.md)
+[< 前へ: コンフリクトの解消](08-conflict.md) | [目次](../README.md) | [次へ: 認証の設定 >](10-authentication.md)
 
 ---
 
@@ -116,6 +116,8 @@ git status
 このコマンドが Git の状態と「次に何をすべきか」を教えてくれます。
 迷ったらまず `git status` を実行しましょう。
 
+エラーで詰まったときは → [11. 困ったときは（トラブル集）](11-troubleshooting.md)
+
 ---
 
-[< 前へ: コンフリクトの解消](08-conflict.md) | [目次](../README.md)
+[< 前へ: コンフリクトの解消](08-conflict.md) | [目次](../README.md) | [次へ: 認証の設定 >](10-authentication.md)
