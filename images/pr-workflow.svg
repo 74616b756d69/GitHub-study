@@ -3,12 +3,6 @@
     <filter id="shadow5" x="-5%" y="-5%" width="115%" height="115%">
       <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.12"/>
     </filter>
-    <marker id="arrDown5" markerWidth="8" markerHeight="8" refX="4" refY="8" orient="auto">
-      <polygon points="0 0, 4 8, 8 0" fill="#0969da"/>
-    </marker>
-    <marker id="arrDown5g" markerWidth="8" markerHeight="8" refX="4" refY="8" orient="auto">
-      <polygon points="0 0, 4 8, 8 0" fill="#1a7f37"/>
-    </marker>
   </defs>
 
   <rect width="800" height="480" rx="16" fill="#f6f8fa"/>
@@ -27,7 +21,7 @@
   <!-- Arrow 1→2 -->
   <g opacity="0">
     <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.14;0.18;1" dur="10s" repeatCount="indefinite"/>
-    <line x1="400" y1="125" x2="400" y2="148" stroke="#0969da" stroke-width="2.5" marker-end="url(#arrDown5)"/>
+    <line x1="400" y1="125" x2="400" y2="148" stroke="#0969da" stroke-width="2.5"/>
   </g>
 
   <!-- Step 2 -->
@@ -43,7 +37,7 @@
   <!-- Arrow 2→3 -->
   <g opacity="0">
     <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.29;0.33;1" dur="10s" repeatCount="indefinite"/>
-    <line x1="400" y1="215" x2="400" y2="238" stroke="#0969da" stroke-width="2.5" marker-end="url(#arrDown5)"/>
+    <line x1="400" y1="215" x2="400" y2="238" stroke="#0969da" stroke-width="2.5"/>
   </g>
 
   <!-- Step 3 -->
@@ -69,7 +63,7 @@
   <!-- Arrow 3→4 -->
   <g opacity="0">
     <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.54;0.58;1" dur="10s" repeatCount="indefinite"/>
-    <line x1="400" y1="305" x2="400" y2="328" stroke="#0969da" stroke-width="2.5" marker-end="url(#arrDown5)"/>
+    <line x1="400" y1="305" x2="400" y2="328" stroke="#0969da" stroke-width="2.5"/>
   </g>
 
   <!-- Step 4 -->
@@ -85,7 +79,7 @@
   <!-- Arrow 4→Success -->
   <g opacity="0">
     <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.7;0.74;1" dur="10s" repeatCount="indefinite"/>
-    <line x1="400" y1="395" x2="400" y2="418" stroke="#1a7f37" stroke-width="2.5" marker-end="url(#arrDown5g)"/>
+    <line x1="400" y1="395" x2="400" y2="418" stroke="#1a7f37" stroke-width="2.5"/>
   </g>
 
   <!-- Success pill -->
