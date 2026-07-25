@@ -16,7 +16,6 @@
 
   <!-- ===== VS Code Window ===== -->
   <rect x="40" y="60" width="420" height="400" rx="10" fill="#1e1e1e" filter="url(#shadowV)"/>
-  <!-- Title bar -->
   <rect x="40" y="60" width="420" height="32" rx="10" fill="#323233"/>
   <rect x="40" y="82" width="420" height="10" fill="#323233"/>
   <circle cx="62" cy="76" r="6" fill="#ff5f57"/>
@@ -26,33 +25,26 @@
 
   <!-- Sidebar -->
   <rect x="40" y="92" width="50" height="368" fill="#252526"/>
-  <!-- Sidebar icons -->
   <rect x="52" y="110" width="26" height="26" rx="4" fill="#3c3c3c"/>
   <text x="65" y="128" text-anchor="middle" font-size="14" fill="#858585">E</text>
   <rect x="52" y="146" width="26" height="26" rx="4" fill="#3c3c3c"/>
   <text x="65" y="164" text-anchor="middle" font-size="14" fill="#858585">S</text>
   <rect x="52" y="182" width="26" height="26" rx="4" fill="#0078d4"/>
   <text x="65" y="200" text-anchor="middle" font-size="14" fill="#fff">G</text>
-  <!-- Git icon highlight -->
 
   <!-- Editor area -->
   <rect x="90" y="92" width="370" height="250" fill="#1e1e1e"/>
-  <!-- File tab -->
   <rect x="90" y="92" width="140" height="28" fill="#2d2d2d"/>
   <text x="160" y="111" text-anchor="middle" font-size="11" fill="#cccccc">taro-yamada.md</text>
 
-  <!-- Code lines -->
   <text x="100" y="140" font-size="11" fill="#608b4e"># 山田 太郎</text>
-  <text x="100" y="158" font-size="11" fill="#608b4e"></text>
   <text x="100" y="176" font-size="11" fill="#608b4e">## 自己紹介</text>
   <text x="100" y="194" font-size="11" fill="#d4d4d4">はじめまして！</text>
   <text x="100" y="212" font-size="11" fill="#d4d4d4">Web開発に興味があります。</text>
-  <text x="100" y="230" font-size="11" fill="#608b4e"></text>
   <text x="100" y="248" font-size="11" fill="#608b4e">## 好きな技術</text>
   <text x="100" y="266" font-size="11" fill="#d4d4d4">- JavaScript</text>
   <text x="100" y="284" font-size="11" fill="#d4d4d4">- React</text>
 
-  <!-- Line numbers -->
   <text x="95" y="140" text-anchor="end" font-size="10" fill="#858585">1</text>
   <text x="95" y="158" text-anchor="end" font-size="10" fill="#858585">2</text>
   <text x="95" y="176" text-anchor="end" font-size="10" fill="#858585">3</text>
@@ -68,56 +60,78 @@
   <rect x="90" y="342" width="370" height="22" fill="#252526"/>
   <text x="100" y="357" font-size="10" fill="#cccccc">TERMINAL</text>
 
-  <!-- Terminal commands -->
-  <text x="100" y="380" font-size="11" fill="#4ec9b0">$</text>
-  <text x="115" y="380" font-size="11" fill="#dcdcaa">git add</text>
-  <text x="168" y="380" font-size="11" fill="#ce9178">taro-yamada.md</text>
+  <!-- Terminal: git add -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.08;0.12;1" dur="12s" repeatCount="indefinite"/>
+    <text x="100" y="380" font-size="11" fill="#4ec9b0">$</text>
+    <text x="115" y="380" font-size="11" fill="#dcdcaa">git add</text>
+    <text x="168" y="380" font-size="11" fill="#ce9178">taro-yamada.md</text>
+  </g>
 
-  <text x="100" y="400" font-size="11" fill="#4ec9b0">$</text>
-  <text x="115" y="400" font-size="11" fill="#dcdcaa">git commit</text>
-  <text x="190" y="400" font-size="11" fill="#ce9178">-m "add: 自己紹介"</text>
+  <!-- Terminal: git commit -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.24;0.28;1" dur="12s" repeatCount="indefinite"/>
+    <text x="100" y="400" font-size="11" fill="#4ec9b0">$</text>
+    <text x="115" y="400" font-size="11" fill="#dcdcaa">git commit</text>
+    <text x="190" y="400" font-size="11" fill="#ce9178">-m "add: 自己紹介"</text>
+  </g>
 
-  <text x="100" y="425" font-size="11" fill="#4ec9b0">$</text>
-  <text x="115" y="425" font-size="11" fill="#dcdcaa">git push</text>
-  <text x="172" y="425" font-size="11" fill="#ce9178">origin feature/add-taro</text>
+  <!-- Terminal: git push -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.56;0.60;1" dur="12s" repeatCount="indefinite"/>
+    <text x="100" y="425" font-size="11" fill="#4ec9b0">$</text>
+    <text x="115" y="425" font-size="11" fill="#dcdcaa">git push</text>
+    <text x="172" y="425" font-size="11" fill="#ce9178">origin feature/add-taro</text>
+  </g>
 
-  <!-- ===== Right side: Git vs GitHub explanation ===== -->
+  <!-- Arrow: commit → Git box -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.30;0.35;1" dur="12s" repeatCount="indefinite"/>
+    <path d="M 365 400 C 420 400, 440 220, 498 200" stroke="#e36209" stroke-width="2" fill="none" marker-end="url(#arrOrange)" stroke-dasharray="5,3">
+      <animate attributeName="stroke-dashoffset" values="0;-16" dur="0.9s" repeatCount="indefinite"/>
+    </path>
+  </g>
 
   <!-- Git (Local) Box -->
-  <rect x="500" y="108" width="270" height="160" rx="14" fill="#fff" stroke="#e36209" stroke-width="2.5" filter="url(#shadowV)"/>
-  <rect x="500" y="108" width="270" height="36" rx="14" fill="#fff3cd"/>
-  <rect x="500" y="130" width="270" height="14" fill="#fff3cd"/>
-  <text x="635" y="133" text-anchor="middle" font-size="16" font-weight="bold" fill="#e36209">Git = 自分の PC 上の操作</text>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.34;0.40;1" dur="12s" repeatCount="indefinite"/>
+    <rect x="500" y="108" width="270" height="160" rx="14" fill="#fff" stroke="#e36209" stroke-width="2.5" filter="url(#shadowV)"/>
+    <rect x="500" y="108" width="270" height="36" rx="14" fill="#fff3cd"/>
+    <rect x="500" y="130" width="270" height="14" fill="#fff3cd"/>
+    <text x="635" y="133" text-anchor="middle" font-size="16" font-weight="bold" fill="#e36209">Git = 自分の PC 上の操作</text>
+    <text x="520" y="170" font-size="13" fill="#24292e">git add</text>
+    <text x="620" y="170" font-size="12" fill="#57606a">→ 変更を選ぶ</text>
+    <text x="520" y="198" font-size="13" font-weight="bold" fill="#e36209">git commit</text>
+    <text x="620" y="198" font-size="12" fill="#57606a">→ 履歴に記録</text>
+    <rect x="515" y="215" width="240" height="40" rx="8" fill="#fff3cd"/>
+    <text x="635" y="233" text-anchor="middle" font-size="11" fill="#664d03">commit = 自分の PC に保存するだけ</text>
+    <text x="635" y="248" text-anchor="middle" font-size="11" fill="#664d03">まだ誰にも共有されていない</text>
+  </g>
 
-  <text x="520" y="170" font-size="13" fill="#24292e">git add</text>
-  <text x="620" y="170" font-size="12" fill="#57606a">→ 変更を選ぶ</text>
-
-  <text x="520" y="198" font-size="13" font-weight="bold" fill="#e36209">git commit</text>
-  <text x="620" y="198" font-size="12" fill="#57606a">→ 履歴に記録</text>
-
-  <rect x="515" y="215" width="240" height="40" rx="8" fill="#fff3cd"/>
-  <text x="635" y="233" text-anchor="middle" font-size="11" fill="#664d03">commit = 自分の PC に保存するだけ</text>
-  <text x="635" y="248" text-anchor="middle" font-size="11" fill="#664d03">まだ誰にも共有されていない</text>
-
-  <!-- Arrow from commit line to Git box -->
-  <path d="M 365 400 C 420 400, 440 220, 498 200" stroke="#e36209" stroke-width="2" fill="none" marker-end="url(#arrOrange)" stroke-dasharray="5,3"/>
+  <!-- Arrow: push → GitHub box -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.62;0.67;1" dur="12s" repeatCount="indefinite"/>
+    <path d="M 365 425 C 420 425, 440 380, 498 365" stroke="#8250df" stroke-width="2" fill="none" marker-end="url(#arrPurpleV)" stroke-dasharray="5,3">
+      <animate attributeName="stroke-dashoffset" values="0;-16" dur="0.9s" repeatCount="indefinite"/>
+    </path>
+  </g>
 
   <!-- GitHub (Remote) Box -->
-  <rect x="500" y="300" width="270" height="160" rx="14" fill="#fff" stroke="#8250df" stroke-width="2.5" filter="url(#shadowV)"/>
-  <rect x="500" y="300" width="270" height="36" rx="14" fill="#f3e8ff"/>
-  <rect x="500" y="322" width="270" height="14" fill="#f3e8ff"/>
-  <text x="635" y="325" text-anchor="middle" font-size="16" font-weight="bold" fill="#8250df">GitHub = インターネット上</text>
-
-  <text x="520" y="362" font-size="13" font-weight="bold" fill="#8250df">git push</text>
-  <text x="620" y="362" font-size="12" fill="#57606a">→ GitHub にアップ</text>
-
-  <rect x="515" y="380" width="240" height="55" rx="8" fill="#f3e8ff"/>
-  <text x="635" y="398" text-anchor="middle" font-size="11" fill="#6e40c9">push = GitHub に送る操作</text>
-  <text x="635" y="413" text-anchor="middle" font-size="11" fill="#6e40c9">ここで初めてチームが見られる</text>
-  <text x="635" y="428" text-anchor="middle" font-size="11" fill="#6e40c9">push するまでは完全にローカル</text>
-
-  <!-- Arrow from push line to GitHub box -->
-  <path d="M 365 425 C 420 425, 440 380, 498 365" stroke="#8250df" stroke-width="2" fill="none" marker-end="url(#arrPurpleV)" stroke-dasharray="5,3"/>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.66;0.72;1" dur="12s" repeatCount="indefinite"/>
+    <rect x="500" y="300" width="270" height="160" rx="14" fill="#fff" stroke="#8250df" stroke-width="2.5" filter="url(#shadowV)">
+      <animate attributeName="stroke-width" values="2.5;2.5;6;2.5;2.5" keyTimes="0;0.74;0.77;0.82;1" dur="12s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="500" y="300" width="270" height="36" rx="14" fill="#f3e8ff"/>
+    <rect x="500" y="322" width="270" height="14" fill="#f3e8ff"/>
+    <text x="635" y="325" text-anchor="middle" font-size="16" font-weight="bold" fill="#8250df">GitHub = インターネット上</text>
+    <text x="520" y="362" font-size="13" font-weight="bold" fill="#8250df">git push</text>
+    <text x="620" y="362" font-size="12" fill="#57606a">→ GitHub にアップ</text>
+    <rect x="515" y="380" width="240" height="55" rx="8" fill="#f3e8ff"/>
+    <text x="635" y="398" text-anchor="middle" font-size="11" fill="#6e40c9">push = GitHub に送る操作</text>
+    <text x="635" y="413" text-anchor="middle" font-size="11" fill="#6e40c9">ここで初めてチームが見られる</text>
+    <text x="635" y="428" text-anchor="middle" font-size="11" fill="#6e40c9">push するまでは完全にローカル</text>
+  </g>
 
   <!-- Bottom summary bar -->
   <rect x="40" y="480" width="720" height="30" rx="8" fill="#24292e"/>

@@ -41,7 +41,9 @@
   <text x="265" y="274" text-anchor="middle" font-size="10" fill="#0f5132">履歴を保存</text>
 
   <!-- Arrow between working dir and local repo -->
-  <line x1="190" y1="260" x2="210" y2="260" stroke="#495057" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="190" y1="260" x2="210" y2="260" stroke="#495057" stroke-width="2" marker-end="url(#arrowhead)">
+    <animate attributeName="stroke-width" values="2;3.5;2;2" keyTimes="0;0.06;0.18;1" dur="8s" repeatCount="indefinite"/>
+  </line>
   <text x="200" y="250" text-anchor="middle" font-size="8" fill="#495057">commit</text>
 
   <!-- Cloud / GitHub Area -->
@@ -76,14 +78,24 @@
     </marker>
   </defs>
 
-  <!-- Push Arrow -->
-  <line x1="330" y1="240" x2="500" y2="240" stroke="#0969da" stroke-width="3" marker-end="url(#arrowBlue)" stroke-dasharray="8,4"/>
-  <rect x="370" y="222" width="80" height="22" rx="6" fill="#ddf4ff"/>
+  <!-- Push Arrow (dashes travel toward GitHub) -->
+  <line x1="330" y1="240" x2="500" y2="240" stroke="#0969da" stroke-width="3" marker-end="url(#arrowBlue)" stroke-dasharray="8,4">
+    <animate attributeName="stroke-dashoffset" values="0;-24" dur="1s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-width" values="3;4.5;3;3;3" keyTimes="0;0.12;0.25;0.5;1" dur="8s" repeatCount="indefinite"/>
+  </line>
+  <rect x="370" y="222" width="80" height="22" rx="6" fill="#ddf4ff">
+    <animate attributeName="fill" values="#ddf4ff;#54aeff;#ddf4ff;#ddf4ff" keyTimes="0;0.14;0.3;1" dur="8s" repeatCount="indefinite"/>
+  </rect>
   <text x="410" y="238" text-anchor="middle" font-size="13" font-weight="bold" fill="#0969da">push</text>
 
-  <!-- Pull Arrow -->
-  <line x1="500" y1="275" x2="330" y2="275" stroke="#198754" stroke-width="3" marker-end="url(#arrowGreen)" stroke-dasharray="8,4"/>
-  <rect x="370" y="265" width="80" height="22" rx="6" fill="#d1e7dd"/>
+  <!-- Pull Arrow (dashes travel back to your PC) -->
+  <line x1="500" y1="275" x2="330" y2="275" stroke="#198754" stroke-width="3" marker-end="url(#arrowGreen)" stroke-dasharray="8,4">
+    <animate attributeName="stroke-dashoffset" values="0;-24" dur="1s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-width" values="3;3;3;4.5;3;3" keyTimes="0;0.5;0.6;0.66;0.78;1" dur="8s" repeatCount="indefinite"/>
+  </line>
+  <rect x="370" y="265" width="80" height="22" rx="6" fill="#d1e7dd">
+    <animate attributeName="fill" values="#d1e7dd;#d1e7dd;#6fcf97;#d1e7dd;#d1e7dd" keyTimes="0;0.58;0.66;0.8;1" dur="8s" repeatCount="indefinite"/>
+  </rect>
   <text x="410" y="281" text-anchor="middle" font-size="13" font-weight="bold" fill="#198754">pull</text>
 
   <!-- Bottom labels -->

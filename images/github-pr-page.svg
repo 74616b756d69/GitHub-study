@@ -44,7 +44,9 @@
 
   <!-- review/merge box -->
   <rect x="50" y="290" width="440" height="120" rx="8" fill="#ffffff" stroke="#d0d7de"/>
-  <circle cx="70" cy="312" r="9" fill="#1f883d"/>
+  <circle cx="70" cy="312" r="9" fill="#1f883d">
+    <animate attributeName="r" values="9;9;13;9;9" keyTimes="0;0.2;0.26;0.34;1" dur="8s" repeatCount="indefinite"/>
+  </circle>
   <text x="70" y="316" text-anchor="middle" font-size="11" fill="#fff">✔</text>
   <text x="88" y="309" font-size="11" font-weight="bold" fill="#1a7f37">レビュアーが承認しました（Approve）</text>
   <text x="88" y="325" font-size="9.5" fill="#57606a">1 名が変更を承認しています</text>
@@ -53,7 +55,9 @@
   <text x="70" y="366" text-anchor="middle" font-size="10" fill="#fff">✓</text>
   <text x="88" y="359" font-size="11" font-weight="bold" fill="#24292e">コンフリクトはありません</text>
   <text x="88" y="374" font-size="9.5" fill="#57606a">このブランチは main に自動でマージできます</text>
-  <rect x="88" y="384" width="150" height="24" rx="6" fill="#1f883d"/>
+  <rect x="88" y="384" width="150" height="24" rx="6" fill="#1f883d">
+    <animate attributeName="opacity" values="1;1;0.4;1;0.4;1;1" keyTimes="0;0.55;0.60;0.65;0.70;0.75;1" dur="8s" repeatCount="indefinite"/>
+  </rect>
   <text x="163" y="400" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">Merge pull request</text>
 
   <!-- merge callout -->

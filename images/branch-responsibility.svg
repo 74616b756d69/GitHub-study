@@ -19,18 +19,26 @@
   <text x="42" y="440" text-anchor="middle" font-size="9" font-weight="bold" fill="#1a7f37">危険度 低</text>
 
   <!-- ===== main branch ===== -->
-  <rect x="80" y="80" width="690" height="70" rx="14" fill="#ffebe9" stroke="#cf222e" stroke-width="2.5" filter="url(#shBr)"/>
+  <rect x="80" y="80" width="690" height="70" rx="14" fill="#ffebe9" stroke="#cf222e" stroke-width="2.5" filter="url(#shBr)">
+    <animate attributeName="stroke-width" values="2.5;2.5;7;3;6;2.5;2.5" keyTimes="0;0.74;0.78;0.82;0.86;0.92;1" dur="10s" repeatCount="indefinite"/>
+  </rect>
   <rect x="95" y="95" width="90" height="28" rx="8" fill="#cf222e"/>
   <text x="140" y="114" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">main</text>
   <text x="210" y="108" font-size="13" font-weight="bold" fill="#cf222e">本番環境（お客様が使っている）</text>
   <text x="210" y="130" font-size="11" fill="#cf222e">ここにバグが入る = お客様に影響 = あなたの責任になる</text>
-  <text x="720" y="120" text-anchor="middle" font-size="22" fill="#cf222e">!!</text>
+  <text x="720" y="120" text-anchor="middle" font-size="22" fill="#cf222e">!!
+    <animate attributeName="opacity" values="1;0.25;1;0.25;1" keyTimes="0;0.25;0.5;0.75;1" dur="1.6s" repeatCount="indefinite"/>
+  </text>
 
   <!-- Triangle arrow develop → main -->
-  <polygon points="390,170 410,170 400,155" fill="#24292e"/>
+  <polygon points="390,170 410,170 400,155" fill="#24292e">
+    <animate attributeName="fill" values="#24292e;#24292e;#cf222e;#24292e;#24292e" keyTimes="0;0.70;0.74;0.80;1" dur="10s" repeatCount="indefinite"/>
+  </polygon>
 
   <!-- ===== develop branch ===== -->
-  <rect x="80" y="178" width="690" height="70" rx="14" fill="#fff3cd" stroke="#f0ad4e" stroke-width="2" filter="url(#shBr)"/>
+  <rect x="80" y="178" width="690" height="70" rx="14" fill="#fff3cd" stroke="#f0ad4e" stroke-width="2" filter="url(#shBr)">
+    <animate attributeName="stroke-width" values="2;2;5;2;2" keyTimes="0;0.52;0.58;0.70;1" dur="10s" repeatCount="indefinite"/>
+  </rect>
   <rect x="95" y="193" width="110" height="28" rx="8" fill="#f0ad4e"/>
   <text x="150" y="212" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">develop</text>
   <text x="230" y="206" font-size="13" font-weight="bold" fill="#664d03">開発統合ブランチ</text>
@@ -38,20 +46,28 @@
   <text x="720" y="216" text-anchor="middle" font-size="22" fill="#f0ad4e">!</text>
 
   <!-- Triangle arrow feature → develop -->
-  <polygon points="390,268 410,268 400,253" fill="#24292e"/>
+  <polygon points="390,268 410,268 400,253" fill="#24292e">
+    <animate attributeName="fill" values="#24292e;#24292e;#f0ad4e;#24292e;#24292e" keyTimes="0;0.46;0.50;0.56;1" dur="10s" repeatCount="indefinite"/>
+  </polygon>
 
   <!-- ===== feature branch ===== -->
-  <rect x="80" y="276" width="690" height="70" rx="14" fill="#ddf4ff" stroke="#0969da" stroke-width="2" filter="url(#shBr)"/>
+  <rect x="80" y="276" width="690" height="70" rx="14" fill="#ddf4ff" stroke="#0969da" stroke-width="2" filter="url(#shBr)">
+    <animate attributeName="stroke-width" values="2;2;5;2;2" keyTimes="0;0.28;0.34;0.46;1" dur="10s" repeatCount="indefinite"/>
+  </rect>
   <rect x="95" y="291" width="130" height="28" rx="8" fill="#0969da"/>
   <text x="160" y="310" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">feature/*</text>
   <text x="250" y="304" font-size="13" font-weight="bold" fill="#0969da">機能開発ブランチ</text>
   <text x="250" y="326" font-size="11" fill="#0550ae">あなたの作業場所。自由に試行錯誤して OK</text>
 
   <!-- Triangle arrow local → feature -->
-  <polygon points="390,366 410,366 400,351" fill="#24292e"/>
+  <polygon points="390,366 410,366 400,351" fill="#24292e">
+    <animate attributeName="fill" values="#24292e;#0969da;#24292e;#24292e" keyTimes="0;0.22;0.30;1" dur="10s" repeatCount="indefinite"/>
+  </polygon>
 
   <!-- ===== local (uncommitted) ===== -->
-  <rect x="80" y="374" width="690" height="60" rx="14" fill="#d1e7dd" stroke="#1a7f37" stroke-width="1.5" filter="url(#shBr)"/>
+  <rect x="80" y="374" width="690" height="60" rx="14" fill="#d1e7dd" stroke="#1a7f37" stroke-width="1.5" filter="url(#shBr)">
+    <animate attributeName="stroke-width" values="1.5;4.5;1.5;1.5" keyTimes="0;0.08;0.20;1" dur="10s" repeatCount="indefinite"/>
+  </rect>
   <rect x="95" y="387" width="150" height="28" rx="8" fill="#1a7f37"/>
   <text x="170" y="406" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">ローカル作業</text>
   <text x="270" y="401" font-size="13" font-weight="bold" fill="#1a7f37">自分の PC</text>

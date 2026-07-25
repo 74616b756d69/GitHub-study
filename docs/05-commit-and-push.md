@@ -15,7 +15,7 @@
 ## Git の基本操作フロー
 
 <p align="center">
-  <img src="../images/git-basic-flow-animated.svg" alt="Git の基本操作フロー（編集 → add → commit → push とファイルが移動していくアニメーション）" width="720">
+  <img src="../images/git-basic-flow.svg" alt="Git の基本操作フロー（編集 → add → commit → push とファイルが移動していく様子）" width="720">
 </p>
 
 **編集 → git add → git commit → git push** が基本の流れです。
