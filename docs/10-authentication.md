@@ -108,7 +108,7 @@ ssh-keygen -t ed25519 -C "あなたのメールアドレス"
 pbcopy < ~/.ssh/id_ed25519.pub
 ```
 
-**Windows（Git Bash）:**
+**Windows:**
 ```bash
 cat ~/.ssh/id_ed25519.pub | clip
 ```
