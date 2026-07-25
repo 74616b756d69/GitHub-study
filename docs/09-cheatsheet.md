@@ -10,6 +10,13 @@
 
 ## 基本操作
 
+この4つは「今どうなっているか」を確認するためのコマンドです。
+実際の表示イメージを見てみましょう:
+
+<p align="center">
+  <img src="../images/git-inspect-commands.svg" alt="状態を確認する基本コマンド（status / diff / log / log --oneline）の表示イメージ" width="720">
+</p>
+
 | コマンド | 説明 |
 |----------|------|
 | `git status` | 現在の状態を確認 |

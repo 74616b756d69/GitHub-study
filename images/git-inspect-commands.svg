@@ -1,0 +1,67 @@
+<svg viewBox="0 0 800 470" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', 'Hiragino Sans', sans-serif">
+  <defs>
+    <filter id="icShadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="470" rx="16" fill="#f6f8fa"/>
+  <text x="400" y="38" text-anchor="middle" font-size="21" font-weight="bold" fill="#24292e">「状態を確認する」基本コマンド</text>
+  <text x="400" y="60" text-anchor="middle" font-size="12" fill="#57606a">迷ったら、まずこの4つで“今どうなっているか”を見よう</text>
+
+  <!-- ===== Card 1: git status ===== -->
+  <rect x="30" y="80" width="360" height="170" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5" filter="url(#icShadow)"/>
+  <rect x="30" y="80" width="360" height="34" rx="12" fill="#fff3cd"/>
+  <rect x="30" y="100" width="360" height="14" fill="#fff3cd"/>
+  <text x="48" y="102" font-size="13" font-weight="bold" fill="#664d03">git status</text>
+  <text x="372" y="102" text-anchor="end" font-size="10" fill="#8a6d3b">今の状態を確認</text>
+  <!-- terminal -->
+  <rect x="46" y="126" width="328" height="108" rx="8" fill="#0d1117"/>
+  <text x="60" y="148" font-size="10.5" fill="#7ee787" font-family="monospace">$ git status</text>
+  <text x="60" y="167" font-size="10" fill="#c9d1d9" font-family="monospace">On branch feature/add-taro</text>
+  <text x="60" y="184" font-size="10" fill="#c9d1d9" font-family="monospace">Changes not staged:</text>
+  <text x="60" y="201" font-size="10" fill="#f85149" font-family="monospace">   modified: profile.md</text>
+  <text x="60" y="221" font-size="10" fill="#8b949e" font-family="monospace">→ 変更あり・未 add の状態</text>
+
+  <!-- ===== Card 2: git diff ===== -->
+  <rect x="410" y="80" width="360" height="170" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5" filter="url(#icShadow)"/>
+  <rect x="410" y="80" width="360" height="34" rx="12" fill="#ddf4ff"/>
+  <rect x="410" y="100" width="360" height="14" fill="#ddf4ff"/>
+  <text x="428" y="102" font-size="13" font-weight="bold" fill="#0550ae">git diff</text>
+  <text x="752" y="102" text-anchor="end" font-size="10" fill="#0969da">変更した中身を確認</text>
+  <rect x="426" y="126" width="328" height="108" rx="8" fill="#0d1117"/>
+  <text x="440" y="148" font-size="10.5" fill="#7ee787" font-family="monospace">$ git diff</text>
+  <text x="440" y="167" font-size="10" fill="#8b949e" font-family="monospace">  # profile.md</text>
+  <text x="440" y="186" font-size="10" fill="#f85149" font-family="monospace">- 好きな言語: Java</text>
+  <text x="440" y="205" font-size="10" fill="#7ee787" font-family="monospace">+ 好きな言語: Python</text>
+  <text x="440" y="225" font-size="10" fill="#8b949e" font-family="monospace">→ 赤=削除 / 緑=追加</text>
+
+  <!-- ===== Card 3: git log ===== -->
+  <rect x="30" y="266" width="360" height="170" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5" filter="url(#icShadow)"/>
+  <rect x="30" y="266" width="360" height="34" rx="12" fill="#d1e7dd"/>
+  <rect x="30" y="286" width="360" height="14" fill="#d1e7dd"/>
+  <text x="48" y="288" font-size="13" font-weight="bold" fill="#0f5132">git log</text>
+  <text x="372" y="288" text-anchor="end" font-size="10" fill="#198754">コミット履歴を確認</text>
+  <rect x="46" y="312" width="328" height="108" rx="8" fill="#0d1117"/>
+  <text x="60" y="334" font-size="10.5" fill="#7ee787" font-family="monospace">$ git log</text>
+  <text x="60" y="353" font-size="10" fill="#d29922" font-family="monospace">commit a1b2c3d...</text>
+  <text x="60" y="370" font-size="10" fill="#c9d1d9" font-family="monospace">Author: Taro</text>
+  <text x="60" y="387" font-size="10" fill="#c9d1d9" font-family="monospace">    自己紹介カードを追加</text>
+  <text x="60" y="407" font-size="10" fill="#8b949e" font-family="monospace">→ 誰が・いつ・何をしたか</text>
+
+  <!-- ===== Card 4: git log oneline ===== -->
+  <rect x="410" y="266" width="360" height="170" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5" filter="url(#icShadow)"/>
+  <rect x="410" y="266" width="360" height="34" rx="12" fill="#f3e8ff"/>
+  <rect x="410" y="286" width="360" height="14" fill="#f3e8ff"/>
+  <text x="428" y="288" font-size="13" font-weight="bold" fill="#6e40c9">git log --oneline</text>
+  <text x="752" y="288" text-anchor="end" font-size="10" fill="#8250df">履歴を1行ずつ</text>
+  <rect x="426" y="312" width="328" height="108" rx="8" fill="#0d1117"/>
+  <text x="440" y="334" font-size="10.5" fill="#7ee787" font-family="monospace">$ git log --oneline</text>
+  <text x="440" y="353" font-size="10" fill="#d29922" font-family="monospace">a1b2c3d <tspan fill="#c9d1d9">自己紹介カードを追加</tspan></text>
+  <text x="440" y="371" font-size="10" fill="#d29922" font-family="monospace">9f8e7d6 <tspan fill="#c9d1d9">README を更新</tspan></text>
+  <text x="440" y="389" font-size="10" fill="#d29922" font-family="monospace">3c2b1a0 <tspan fill="#c9d1d9">最初のコミット</tspan></text>
+  <text x="440" y="409" font-size="10" fill="#8b949e" font-family="monospace">→ ざっと流れを見るのに便利</text>
+
+  <!-- bottom tip -->
+  <text x="400" y="458" text-anchor="middle" font-size="12" fill="#24292e"><tspan font-weight="bold" fill="#cf222e">困ったら</tspan> まず <tspan font-weight="bold" fill="#664d03">git status</tspan> ！ 次に何をすべきか教えてくれる</text>
+</svg>
