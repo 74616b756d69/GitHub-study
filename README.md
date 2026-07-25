@@ -1,4 +1,4 @@
-# GitHub-Studie
+# GitHub-Study
 
 **Git / GitHub をチームで使えるようになるためのハンズオンガイド**
 
