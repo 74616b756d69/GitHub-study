@@ -1,0 +1,107 @@
+<svg viewBox="0 0 800 590" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', 'Hiragino Sans', sans-serif">
+  <defs>
+    <filter id="shGl" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="590" rx="16" fill="#f6f8fa"/>
+  <text x="400" y="38" text-anchor="middle" font-size="21" font-weight="bold" fill="#24292e">Git / GitHub 用語集</text>
+  <text x="400" y="60" text-anchor="middle" font-size="12" fill="#57606a">似た言葉が多いので「どこの話か」で分けて覚えるのがコツ</text>
+
+  <!-- ================= Panel A: 置き場所 ================= -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.06;1" dur="12s" repeatCount="indefinite"/>
+    <rect x="30" y="86" width="364" height="208" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5" filter="url(#shGl)"/>
+    <rect x="30" y="86" width="364" height="34" rx="12" fill="#ddf4ff"/>
+    <rect x="30" y="106" width="364" height="14" fill="#ddf4ff"/>
+    <text x="48" y="109" font-size="13" font-weight="bold" fill="#0550ae">📦 置き場所の用語</text>
+
+    <text x="48" y="146" font-size="12.5" font-weight="bold" fill="#0969da">リポジトリ</text>
+    <text x="48" y="162" font-size="10" fill="#57606a">プロジェクトのファイルと履歴が入った「箱」</text>
+
+    <text x="48" y="184" font-size="12.5" font-weight="bold" fill="#0969da">ローカル / リモート</text>
+    <text x="48" y="200" font-size="10" fill="#57606a">ローカル＝自分の PC 側、リモート＝GitHub 側</text>
+
+    <text x="48" y="222" font-size="12.5" font-weight="bold" fill="#0969da">origin</text>
+    <text x="48" y="238" font-size="10" fill="#57606a">自分のフォークの URL につけられた呼び名</text>
+
+    <text x="48" y="260" font-size="12.5" font-weight="bold" fill="#0969da">upstream</text>
+    <text x="48" y="276" font-size="10" fill="#57606a">フォーク元（本家）リポジトリの呼び名</text>
+  </g>
+
+  <!-- ================= Panel B: 記録 ================= -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.06;0.12;1" dur="12s" repeatCount="indefinite"/>
+    <rect x="406" y="86" width="364" height="208" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5" filter="url(#shGl)"/>
+    <rect x="406" y="86" width="364" height="34" rx="12" fill="#d1e7dd"/>
+    <rect x="406" y="106" width="364" height="14" fill="#d1e7dd"/>
+    <text x="424" y="109" font-size="13" font-weight="bold" fill="#0f5132">📝 変更を記録する用語</text>
+
+    <text x="424" y="146" font-size="12.5" font-weight="bold" fill="#1a7f37">ステージング</text>
+    <text x="424" y="162" font-size="10" fill="#57606a">コミットに含める変更を選んだ状態（git add 後）</text>
+
+    <text x="424" y="184" font-size="12.5" font-weight="bold" fill="#1a7f37">コミット</text>
+    <text x="424" y="200" font-size="10" fill="#57606a">変更を自分の PC に記録すること。まだ共有されない</text>
+
+    <text x="424" y="222" font-size="12.5" font-weight="bold" fill="#1a7f37">スナップショット</text>
+    <text x="424" y="238" font-size="10" fill="#57606a">コミット時点の「フォルダ全体」の状態</text>
+
+    <text x="424" y="260" font-size="12.5" font-weight="bold" fill="#1a7f37">HEAD</text>
+    <text x="424" y="276" font-size="10" fill="#57606a">今どのコミットにいるかを指し示す矢印</text>
+  </g>
+
+  <!-- ================= Panel C: やりとり ================= -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.12;0.18;1" dur="12s" repeatCount="indefinite"/>
+    <rect x="30" y="306" width="364" height="208" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5" filter="url(#shGl)"/>
+    <rect x="30" y="306" width="364" height="34" rx="12" fill="#f3e8ff"/>
+    <rect x="30" y="326" width="364" height="14" fill="#f3e8ff"/>
+    <text x="48" y="329" font-size="13" font-weight="bold" fill="#6e40c9">🔄 やりとりする用語</text>
+
+    <text x="48" y="366" font-size="12.5" font-weight="bold" fill="#8250df">fork（フォーク）</text>
+    <text x="48" y="382" font-size="10" fill="#57606a">他人のリポジトリを自分のアカウントに複製する</text>
+
+    <text x="48" y="404" font-size="12.5" font-weight="bold" fill="#8250df">clone（クローン）</text>
+    <text x="48" y="420" font-size="10" fill="#57606a">GitHub 上のリポジトリを PC にまるごとコピー</text>
+
+    <text x="48" y="442" font-size="12.5" font-weight="bold" fill="#8250df">push（プッシュ）</text>
+    <text x="48" y="458" font-size="10" fill="#57606a">コミットした履歴を GitHub に送る</text>
+
+    <text x="48" y="480" font-size="12.5" font-weight="bold" fill="#8250df">pull（プル）</text>
+    <text x="48" y="496" font-size="10" fill="#57606a">GitHub 側の最新の変更を手元に取り込む</text>
+  </g>
+
+  <!-- ================= Panel D: チームで進める ================= -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.18;0.24;1" dur="12s" repeatCount="indefinite"/>
+    <rect x="406" y="306" width="364" height="208" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5" filter="url(#shGl)"/>
+    <rect x="406" y="306" width="364" height="34" rx="12" fill="#fff3cd"/>
+    <rect x="406" y="326" width="364" height="14" fill="#fff3cd"/>
+    <text x="424" y="329" font-size="13" font-weight="bold" fill="#664d03">🤝 チームで進める用語</text>
+
+    <text x="424" y="366" font-size="12.5" font-weight="bold" fill="#e16f24">ブランチ</text>
+    <text x="424" y="382" font-size="10" fill="#57606a">main を壊さずに作業するための分岐</text>
+
+    <text x="424" y="404" font-size="12.5" font-weight="bold" fill="#e16f24">Pull Request（PR）</text>
+    <text x="424" y="420" font-size="10" fill="#57606a">「この変更を取り込んで」というお願い・提案</text>
+
+    <text x="424" y="442" font-size="12.5" font-weight="bold" fill="#e16f24">マージ</text>
+    <text x="424" y="458" font-size="10" fill="#57606a">ブランチの変更を main に統合すること</text>
+
+    <text x="424" y="480" font-size="12.5" font-weight="bold" fill="#e16f24">コンフリクト</text>
+    <text x="424" y="496" font-size="10" fill="#57606a">同じ行を別々の内容に変えてしまった衝突</text>
+  </g>
+
+  <!-- ================= Bottom tip ================= -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.26;0.32;1" dur="12s" repeatCount="indefinite"/>
+    <rect x="30" y="530" width="740" height="40" rx="10" fill="#24292e"/>
+    <text x="400" y="555" text-anchor="middle" font-size="12" fill="#ffffff">
+      <tspan fill="#7ee787" font-weight="bold">commit</tspan>
+      <tspan fill="#c9d1d9"> は自分の PC に記録 / </tspan>
+      <tspan fill="#d2a8ff" font-weight="bold">push</tspan>
+      <tspan fill="#c9d1d9"> して初めて GitHub のみんなに見える</tspan>
+    </text>
+  </g>
+</svg>
